@@ -31,6 +31,11 @@ module.exports = {
     entry: {
         'bundle' : parentDir+'/js/index.js'
     },
+    devServer: {
+        contentBase: path.resolve(__dirname, '../dist/'),
+        compress: true,
+        port: 9000
+    },
     devtool: 'source-map',
     mode: "development",
     module: {
